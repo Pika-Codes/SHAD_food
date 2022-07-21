@@ -1,8 +1,65 @@
+@font-face {
+    font-family: AbrilFatface;
+    src: url('AbrilFatface-Regular.ttf');
+}
+
 html {
-    background-color: aqua;
+    background-color: #efdbce;
+}
+
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.bartton {
+    float: left;
+}
+  
+.bartton a {
+    display: block;
+    color: white;
     text-align: center;
-};
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header {
+    background-color: #175c4c;
+    padding-top: 40px;
+}
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: AbrilFatface;
 }
+
+ul:not(bar) {
+    margin-left: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.3s;
+    border-radius: 5px;
+    max-width: 30%;
+    display: inline-block;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+  }
