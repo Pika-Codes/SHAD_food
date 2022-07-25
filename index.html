@@ -2,97 +2,129 @@
 
 <html>
 
-    <head>
-        <link rel="stylesheet" href="main.css">
-    </head>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <title>Platefull</title>
+    <link rel="icon" href="logo1.png">
+  </head>
 
-    <ul class="bar">
-        <li class="bartton"><a href="secret.html"><img src="logo.png" class="logo"></a></li>
-        <li class="bartton" id="active"><a href="index.html">Home</a></li>
-        <li class="bartton"><a href="recepie.html">Recipe List</a></li>
-        <li class="bartton"><a href="subscribe.html">Subscriptions</a></li>
-    </ul>
+  <ul class="bar">
+    <li class="bartton"><a href="secret.html"><img src="logo.png" class="logo"></a></li>
+    <li class="bartton" id="active"><a href="index.html">Home</a></li>
+    <li class="bartton"><a href="recepie.html">Recipe List</a></li>
+    <li class="bartton"><a href="#modal-opened" id="modal-closed">Subscribe</a></li>
+    <li class="bartton"><a href="subscribe.html">Subscription Info</a></li>
+  </ul>
 
-    <header>
-        <h1>Platefull</h1>
-    </header>
+  <header>
+    <h1>Platefull</h1>
+  </header>
 
-    <body>
+  <body>
 
-        <h2>Featured Recipes</h2>
-
-        <div class="card" onclick="window.open('https://www.delish.com/cooking/recipe-ideas/recipes/a51522/pepper-egg-in-a-hole-recipe/')">
-            <img src="pepper.png" alt="pepper cups" style="width:100%">
-            <div class="container">
-              <h4><b>Egg Pepper Breakfast Cups</b></h4>
-              <p>Vegetarian, Low-Calorie, Contains Eggs</p>
-            </div>
+    <div class="keeper" id="modal-opened">
+      <div class="modal">
+        <div class="details">
+          <h1 class="title">Join Us</h1>
+          <p class="description">Easy recepies at your disposal</p>
         </div>
-
-        <div class="card" onclick="window.open('https://playswellwithbutter.com/quinoa-black-bean-tacos/')">
-            <img src="tacos.png" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Quinoa Black Bean Tacos</b></h4>
-              <p>Vegan, Dairy-Free</p>
-            </div>
+        <div class="form">
+          <p>E-mail</p>
+          <input type="text" id="email">
+          <p>Password</p>
+          <input type="password" id="pass"><br><br>
+          <button class="btn" onclick="submit()">Create Account &rarr;</button>
         </div>
+        <a href="#modal-closed" class="link-2"></a>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/')">
-            <img src="bibimbap.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Bibimbap</b></h4>
-              <p>Uses Leftovers, Dairy-Free</p>
-            </div>
-        </div>
+    <h2>Featured Recipes</h2>
 
-        <div class="card" onclick="window.open('https://thepracticalkitchen.com/extra-crispy-scallion-potato-pancakes-latkes/')">
-            <img src="latkes.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Potato Latkes</b></h4>
-              <p>Vegetarian, Dairy-Free, Contains Eggs</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://www.delish.com/cooking/recipe-ideas/recipes/a51522/pepper-egg-in-a-hole-recipe/')">
+      <img src="pepper.png" alt="pepper cups" style="width:100%">
+      <div class="container">
+        <h4><b>Egg Pepper Breakfast Cups</b></h4>
+        <p>Vegetarian, Low-Calorie, Contains Eggs</p>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/')">
-            <img src="paneer.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Paneer Butter Masala</b></h4>
-              <p>Vegetarian, Gluten Free (without sides)</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://playswellwithbutter.com/quinoa-black-bean-tacos/')">
+      <img src="tacos.png" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Quinoa Black Bean Tacos</b></h4>
+        <p>Vegan, Dairy-Free</p>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://thefoodcharlatan.com/roti-buttery-indian-flatbread/')">
-            <img src="roti.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Roti</b></h4>
-              <p>Vegan, Dairy-Free With Oil Substitute, Vegetarian Without</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/')">
+      <img src="bibimbap.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Bibimbap</b></h4>
+        <p>Uses Leftovers, Dairy-Free</p>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://www.recipetineats.com/filipino-chicken-adobo-flavour-kapow/')">
-            <img src="adobo.webp" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Chicken Adobo</b></h4>
-              <p>Dairy-Free</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://thepracticalkitchen.com/extra-crispy-scallion-potato-pancakes-latkes/')">
+      <img src="latkes.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Potato Latkes</b></h4>
+        <p>Vegetarian, Dairy-Free, Contains Eggs</p>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://grilledcheesesocial.com/2019/06/27/baked-feta-pasta-with-tomatoes/')">
-            <img src="fetapasta.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Baked Feta Pasta</b></h4>
-              <p>Very Easy, Gives Leftovers</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/')">
+      <img src="paneer.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Paneer Butter Masala</b></h4>
+        <p>Vegetarian, Gluten Free (without sides)</p>
+      </div>
+    </div>
 
-        <div class="card" onclick="window.open('https://www.ricardocuisine.com/en/recipes/6392-basic-risotto')">
-            <img src="risotto.jpg" alt="quinoa black bean tacos" style="width:100%">
-            <div class="container">
-              <h4><b>Parmesian Risotto</b></h4>
-              <p>Ingredient-Light</p>
-            </div>
-        </div>
+    <div class="card" onclick="window.open('https://thefoodcharlatan.com/roti-buttery-indian-flatbread/')">
+      <img src="roti.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Roti</b></h4>
+        <p>Vegan, Dairy-Free With Oil Substitute, Vegetarian Without</p>
+      </div>
+    </div>
 
-    </body>
+    <div class="card" onclick="window.open('https://www.recipetineats.com/filipino-chicken-adobo-flavour-kapow/')">
+      <img src="adobo.webp" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Chicken Adobo</b></h4>
+        <p>Dairy-Free</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="window.open('https://grilledcheesesocial.com/2019/06/27/baked-feta-pasta-with-tomatoes/')">
+      <img src="fetapasta.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Baked Feta Pasta</b></h4>
+        <p>Very Easy, Gives Leftovers</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="window.open('https://www.ricardocuisine.com/en/recipes/6392-basic-risotto')">
+      <img src="risotto.jpg" alt="quinoa black bean tacos" style="width:100%">
+      <div class="container">
+        <h4><b>Parmesian Risotto</b></h4>
+          <p>Ingredient-Light</p>
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+    function submit() {
+      email = document.getElementById("email")
+      pass = document.getElementById("pass")
+      alert("Account created with Email: " + email.value + " And password: " + pass.value)
+      email.value = ""
+      pass.value = ""
+    }
+
+  </script>
 
 </html>
