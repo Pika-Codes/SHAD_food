@@ -13,7 +13,7 @@
     <li class="bartton"><a href="index.html">Home</a></li>
     <li class="bartton"><a href="recipe.html">Recipe List</a></li>
     <li class="bartton"><a href="#modal-opened" id="modal-closed">Subscribe</a></li>
-    <li class="bartton"><a href="subscribe.html">Subscription Info</a></li>
+    <li class="bartton"><a href="subscribe.html" id="active">Subscription Info</a></li>
   </ul>
 
   <header>
@@ -22,14 +22,19 @@
 
   <body>
  
-    <div class="container" id="modal-opened">
+    <div class="keeper" id="modal-opened">
       <div class="modal">
         <div class="details">
-          <h1 class="title">Your Title</h1>
-          <p class="description">Slogan will be here at this place.</p>
+          <h1 class="title">Join Us</h1>
+          <p class="description">Easy recepies at your disposal</p>
         </div>
-        <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-        <button class="btn">Button &rarr;</button>
+        <div class="form">
+          <p>E-mail</p>
+          <input type="text" id="email">
+          <p>Password</p>
+          <input type="password" id="pass"><br><br>
+          <button class="btn" onclick="submit()">Create Account &rarr;</button>
+        </div>
         <a href="#modal-closed" class="link-2"></a>
       </div>
     </div>
